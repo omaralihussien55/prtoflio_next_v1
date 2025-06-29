@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import InfoFlexCards from '../cards/CardsProjects'
+import InfoFlexCards, { CardProps } from '../cards/CardsProjects'
 import Title from '../Title'
 import { ArrayProject } from '../db'
 import {motion} from "framer-motion"
@@ -16,7 +16,7 @@ const ProjectComponent = () => {
         <Title title='Projects'  />
       <div className="flex flex-wrap justify-center gap-6 mb-32">
         {
-            ArrayProject.map((i:any,idx:number)=>{
+            ArrayProject.map((i:CardProps,idx:number)=>{
                  return <InfoFlexCards title={i?.title} info={i.info} photo={i.photo} link={i.link} key={idx} />
             })
         }

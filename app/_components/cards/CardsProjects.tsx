@@ -1,10 +1,10 @@
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import MotinCard from "./MotinCard";
 
-export interface CardProps {title:string,photo:any,link:string,info:string,api?:string,select?:string}
+export interface CardProps {title:string,photo:string | StaticImageData ,link:string,info:string,api?:string,select?:string}
  const  InfoFlexCards:FC<CardProps> =({title,photo,info,link})=> {
 
   return (
@@ -25,7 +25,7 @@ export interface CardProps {title:string,photo:any,link:string,info:string,api?:
               </p>
             </div>
             {link&& <Link href={link} target="_blank"  className={`p-1 rounded-md block bg-indigo-100 text-indigo-400`}>visit</Link>}
-           
+           ظ
           </div>
       </MotinCard> 
   )

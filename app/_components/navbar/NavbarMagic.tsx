@@ -15,7 +15,7 @@ const items : Array<itemsProps> = [{name:"home",link:"/",icon:<Home size={22}/>}
 const NavbarMagic = () => {
       const [active, setActive] = useState("home");
       const [indicatorProps, setIndicatorProps] = useState({ left: 0, width: 0 });
-      const itemRefs:any = useRef({});
+      const itemRefs = useRef<Record<string, HTMLLIElement | null>>({});
       useEffect(() => {
         const currentItem  = itemRefs.current[active];
 
@@ -32,7 +32,9 @@ const NavbarMagic = () => {
             return(
                 <li key={idx} 
                 onClick={()=> setActive(i.name)}
-                ref={(el:any)=> (itemRefs.current[i.name] = el)}
+                ref={(el: HTMLLIElement | null ) => {
+                  itemRefs.current[i.name] = el
+                }}
                 className={`${style.list} ${active === i.name? style.active:""} }`}>
                     <Link href={i.link} className={`${style.link}`}>
                    <span className={`${style.ic}`} >{i.icon}</span>
