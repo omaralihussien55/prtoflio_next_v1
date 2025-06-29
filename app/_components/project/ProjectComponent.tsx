@@ -6,6 +6,7 @@ import { ArrayProject } from '../db'
 import {motion} from "framer-motion"
 const ProjectComponent = () => {
 
+  
   return (
      <motion.div
      initial={{y:200}}
