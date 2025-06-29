@@ -25,7 +25,7 @@ export interface CardProps {title:string,photo:string | StaticImageData ,link:st
               </p>
             </div>
             {link&& <Link href={link} target="_blank"  className={`p-1 rounded-md block bg-indigo-100 text-indigo-400`}>visit</Link>}
-           ظ
+           
           </div>
       </MotinCard> 
   )
