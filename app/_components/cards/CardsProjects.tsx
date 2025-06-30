@@ -10,7 +10,7 @@ export interface CardProps {title:string,photo:string | StaticImageData ,link:st
   return (
     <MotinCard>
           <div
-            className="bg-white rounded-xl shadow-[2px_2px_3px_rgba(0,0,0,0.1),-2px_-2px_2px_rgba(0,0,0,0.1)] p-6 w-64 h-64 flex flex-col justify-between text-center "
+            className="bg-red-400 rounded-xl shadow-[2px_2px_3px_rgba(0,0,0,0.1),-2px_-2px_2px_rgba(0,0,0,0.1)] p-6 w-64 h-64 flex flex-col justify-between text-center "
           >   
           
              <div className="flex justify-center items-center">
@@ -26,6 +26,8 @@ export interface CardProps {title:string,photo:string | StaticImageData ,link:st
             </div>
             {link&& <Link href={link} target="_blank"  className={`p-1 rounded-md block bg-indigo-100 text-indigo-400`}>visit</Link>}
            
+
+
           </div>
       </MotinCard> 
   )
