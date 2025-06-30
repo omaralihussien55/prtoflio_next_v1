@@ -36,7 +36,7 @@ const Info = () => {
           </p>
 
           <a 
-          href={"./cv2025.pdf"}
+          href={"/cv2025.pdf"}
           target="_blank"
           className='p-1.5 border-2 border-purple-300  min-w-24  rounded-md cursor-pointer flex justify-center items-center' >
             Download Cv
