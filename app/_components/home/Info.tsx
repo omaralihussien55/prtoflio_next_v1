@@ -3,7 +3,6 @@ import React  from 'react'
 import {motion} from "framer-motion"
 import AnemyFn from "./animy"
 import { useRouter } from 'next/navigation'
-
 const Info = () => {
   const text = " I am Front-End Developer"
   const router = useRouter()
@@ -36,9 +35,12 @@ const Info = () => {
             passion for creating dynamic and responsive web applications. I specialize in using modern technologies like React, Next.js, and Tailwind CSS to build user-friendly interfaces that enhance the user experience.
           </p>
 
-          <button 
-          onClick={()=> router.push("/about")}
-          className='p-1.5 border-2 border-purple-300 outline-0 min-w-20  rounded-md cursor-pointer' >more</button>
+          <a 
+          href={"./cv2025.pdf"}
+          target="_blank"
+          className='p-1.5 border-2 border-purple-300  min-w-24  rounded-md cursor-pointer flex justify-center items-center' >
+            Download Cv
+          </a>
 
 <AnemyFn  layer='size-16 lg:size-24 rounded top-7 left-8 bg-gradient-to-b from-purple-700 to-blue-600 opacity-20  ' />
 <AnemyFn  animate={{x:[12,0,12]}} layer='size-14 lg:size-20 rounded top-1/2  right-10 bg-gradient-to-r from-orange-700 to-yellow-600 opacity-20  ' />
