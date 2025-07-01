@@ -2,14 +2,12 @@
 import React  from 'react'
 import {motion} from "framer-motion"
 import AnemyFn from "./animy"
-import { useRouter } from 'next/navigation'
 const Info = () => {
-  const text = " I am Front-End Developer"
-  const router = useRouter()
+  const text = "Front-End Developer"
   return (
     <div className='w-full  lg:w-3/4 p-6 flex flex-col justify-center items-center gap-1   mx-auto mt-20 relative'>
-      <h2 className='text-slate-600 font-semibold text-lg'>Hi</h2>
-
+      <h2 className='text-slate-600 font-bold text-md mb-1'>Welcome !</h2>
+      <h3 className='text-slate-600 font-semibold text-lg mb-1.5'>I am Omar Ali</h3>
        <h1 className="font-extrabold text-xl md:text-2xl lg:text-4xl text-slate-900 mb-3 flex flex-wrap">
       {text.split("").map((char, index) => (
         <motion.span
